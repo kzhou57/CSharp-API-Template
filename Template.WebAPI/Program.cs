@@ -21,7 +21,7 @@ namespace Template.WebAPI
             using (var scope = host.Services.CreateScope())
             {
                 var service = scope.ServiceProvider.GetRequiredService<TemplateContext>();
-//                service.Database.Migrate();
+                service.Database.Migrate();
             }
 
             host.Run();
