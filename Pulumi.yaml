@@ -1,0 +1,11 @@
+name: CSharp-API-Template
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Sample C# Rest Service
+template:
+  config:
+    sa_password:
+      description: SQL server password for sysadmin
+      secret: true
